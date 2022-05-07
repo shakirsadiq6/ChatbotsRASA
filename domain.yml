@@ -1,0 +1,101 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- welcome_message:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- usingchatbot:
+    use_entities: true
+- yesiam:
+    use_entities: true
+- nonotyet:
+    use_entities: true
+- ihavequestions:
+    use_entities: true
+- justbrowsing:
+    use_entities: true
+- contactsales:
+    use_entities: true
+- iagree:
+    use_entities: true
+- idontagree:
+    use_entities: true
+- integrations:
+    use_entities: true
+- contactus:
+    use_entities: true
+- email:
+    use_entities: true
+- features:
+    use_entities: true
+- conversationalui:
+    use_entities: true
+- growsrevenue:
+    use_entities: true
+- improvecustomeracquisition:
+    use_entities: true
+- privacypolicy:
+    use_entities: true
+entities:
+- email
+slots:
+  email:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+responses:
+  utter_goodbye:
+  - text: Bye
+  utter_usingchatbot:
+  - buttons:
+    - payload: 👍 Yes, I am
+      title: 👍 Yes, I am
+    - payload: 👎 No, not yet
+      title: 👎 No, not yet
+    text: Are you our current customer?
+  utter_yesiam:
+  - buttons:
+    - payload: 🤝Contact sales
+      title: 🤝Contact sales
+    - payload: 🚀 Features
+      title: 🚀 Features
+    - payload: ⚙ Integrations
+      title: ⚙ Integrations
+    - payload: 📧 Contact us
+      title: 📧 Contact us
+    text: What information are you looking for?
+  utter_nonotyet:
+  - buttons:
+    - payload: 🤝Contact sales
+      title: 🤝Contact sales
+    - payload: 🚀 Features
+      title: 🚀 Features
+    - payload: ⚙ Integrations
+      title: ⚙ Integrations
+    - payload: 📧 Contact us
+      title: 📧 Contact us
+    text: What information are you looking for?
+actions:
+- action_welcome_message
+- action_ihavequestions
+- action_justbrowsing
+- action_contactsales
+- action_iagree
+- action_idontagree
+- action_integrations
+- action_contactus
+- action_features
+- action_email
+- action_conversationalui
+- action_growthrevenue
+- action_customeracquisition
+- action_privacypolicy
+- action_initialpayload
+forms: {}
+e2e_actions: []

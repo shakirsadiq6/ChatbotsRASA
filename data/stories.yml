@@ -1,0 +1,191 @@
+version: "2.0"
+
+stories:
+
+- story: first path
+  steps:
+  - intent: welcome_message
+  - action: action_welcome_message
+  - intent: usingchatbot
+  - action: utter_usingchatbot
+  - intent: yesiam
+  - action: utter_yesiam
+  - intent: contactsales
+  - action: action_contactsales
+  - intent: iagree
+  - action: action_iagree
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: second path
+  steps:
+  - intent: welcome_message
+  - action: action_welcome_message
+  - intent: usingchatbot
+  - action: utter_usingchatbot
+  - intent: nonotyet
+  - action: utter_nonotyet
+  - intent: contactsales
+  - action: action_contactsales
+  - intent: iagree
+  - action: action_iagree
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: third path
+  steps:
+  - intent: welcome_message
+  - action: action_welcome_message
+  - intent: ihavequestions
+  - action: action_ihavequestions
+  - intent: contactsales
+  - action: action_contactsales
+  - intent: iagree
+  - action: action_iagree
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: third path
+  steps:
+  - intent: welcome_message
+  - action: action_welcome_message
+  - intent: idontagree
+  - action: action_idontagree
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: fourth path
+  steps:
+  - intent: welcome_message
+  - action: action_welcome_message
+  - intent: justbrowsing
+  - action: action_justbrowsing
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: fifth path
+  steps:
+  - intent: welcome_message
+  - action: action_welcome_message
+  - intent: integrations
+  - action: action_integrations
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: sixth path
+  steps:
+  - intent: welcome_message
+  - action: action_welcome_message
+  - intent: contactus
+  - action: action_contactus
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: sixth path
+  steps:
+  - intent: welcome_message
+  - action: action_welcome_message
+  - intent: ihavequestions
+  - action: action_ihavequestions
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: seventh path
+  steps:
+  - intent: welcome_message
+  - action: action_welcome_message
+  - intent: email
+  - action: action_email
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: eighth path
+  steps:
+  - intent: welcome_message
+  - action: action_welcome_message
+  - intent: features
+  - action: action_features
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ninth path
+  steps:
+  - intent: welcome_message
+  - action: action_welcome_message
+  - intent: features
+  - action: action_features
+  - intent: conversationalui
+  - action: action_conversationalui
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: tenth path
+  steps:
+  - intent: welcome_message
+  - action: action_welcome_message
+  - intent: features
+  - action: action_features
+  - intent: growsrevenue
+  - action: action_growthrevenue
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: eleventh path
+  steps:
+  - intent: welcome_message
+  - action: action_welcome_message
+  - intent: features
+  - action: action_features
+  - intent: improvecustomeracquisition
+  - action: action_customeracquisition
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: twelveth path
+  steps:
+  - intent: welcome_message
+  - action: action_welcome_message
+  - intent: privacypolicy
+  - action: action_privacypolicy
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: thirteenth path
+  steps:
+  - intent: privacypolicy
+  - action: action_privacypolicy
+
+- story: thirteenth path
+  steps:
+  - intent: justbrowsing
+  - action: action_justbrowsing
+
+- story: fourteenth path
+  steps:
+  - intent: ihavequestions
+  - action: action_ihavequestions
+
+- story: fifteenth path
+  steps:
+  - intent: growsrevenue
+  - action: action_growthrevenue
+
+- story: sixteenth path
+  steps:
+  - intent: conversationalui
+  - action: action_conversationalui
+
+- story: sixteenth path
+  steps:
+  - intent: improvecustomeracquisition
+  - action: action_customeracquisition
+
+- story: seventeenth path
+  steps:
+  - intent: features
+  - action: action_features
+
+- story: eighteenth path
+  steps:
+  - intent: contactus
+  - action: action_contactus

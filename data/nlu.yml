@@ -1,0 +1,123 @@
+version: "2.0"
+
+nlu:
+- intent: welcome_message
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - 👈 Go to main menu
+    - main menu
+    - Go to main menu
+
+- intent: usingchatbot
+  examples: |
+    - Using chatbot 👉
+    - Using chatbot
+
+- intent: yesiam
+  examples: |
+    - 👍 Yes, I am
+    - Yes, I am
+    - Yes, I'm
+    - Yes
+
+- intent: nonotyet
+  examples: |
+    - 👎 No, not yet
+    - No, not yet
+    - not yet
+    - No
+
+- intent: ihavequestions
+  examples: |
+    - I have questions 🙂
+    - I have questions
+
+- intent: justbrowsing
+  examples: |
+    - Just browsing 🙄 
+    - Just browsing
+
+- intent: contactsales
+  examples: |
+    - 🤝Contact sales
+    - Contact sales
+    - 🤔 I have changed my mind
+    - I have changed my mind
+
+- intent: iagree
+  examples: |
+    - 👍 I agree
+    - I agree
+
+- intent: idontagree
+  examples: |
+    - 👎 I do not agree
+    - I do not agree
+
+- intent: integrations
+  examples: |
+    - ⚙ Integrations
+    - Integrations
+
+- intent: contactus
+  examples: |
+    - 📧 Contact us
+    - Contact us
+
+- intent: features
+  examples: |
+    - 🚀 Features
+    - Features
+
+- intent: conversationalui
+  examples: |
+    - Conversational UI
+
+- intent: growsrevenue
+  examples: |
+    - Grows Revenue
+
+- intent: privacypolicy
+  examples: |
+    - 📃 Privacy policy
+    - Privacy policy
+
+- intent: improvecustomeracquisition
+  examples: |
+    - Improve customer acquisition
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: email
+  examples: |
+    - email's [john@email.com](email)
+    - email: [david@email.com](email)
+    - My email is [barbara@email.com](email)
+    - [susan@email.com](email)
+    - My email is [fred@email.com](email)
+    - [test@email.com](email)
+    - [drish@email.com](email)
